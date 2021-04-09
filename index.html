@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>pokemon</title>
+</head>
+
+<body class="container-fluid p-0 pokebackground">
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand bg-danger text-light ">
+            <a class="navbar-brand" href="#">
+                <span class="ml-2 text-info ">
+                    <h1>PokeDex</h1>
+                </span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row justify-content-around">
+
+            <div class="col-md-7">
+
+                <div class="row bg-danger mt-5 rounded shadow">
+                    <div class="col-md-12">
+                        <h1 class="m-3">ALL POKEMON</h1>
+                    </div>
+                    <div class="col-md-12 pokemonColumn" id="allPokemon"></div>
+
+                    <div class="col-md-12  " style="text-align: -webkit-center">
+                        <button type="button" class="btn btn-info m-3 btn-lg">Previous</button>
+                        <button type="button" class="btn btn-info m-3 btn-lg">Next</button>
+                    </div>
+
+                </div>
+
+                <div class="row bg-danger mt-5 rounded shadow">
+                    <h1 class="m-3">CAUGHT POKEMON</h1>
+                    <div class="col-md-12 pokemonColumn" id="myPokemon"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 bg-danger mt-5 rounded shadow">
+                <h1 class="m-3">ACTIVE POKEMON</h1>
+                <div id="activePokemon"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid bg-danger text-light">
+        <div class="row text-center">
+            <div class="col">
+                <p class="m-0"><small>POKEDEX 4/7/21</small></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
